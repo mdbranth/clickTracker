@@ -1,0 +1,25 @@
+{
+  "name": "clickTracker",
+  "version": "0.0.0",
+  "description": "generic click tracker",
+  "main": "clickTracker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdbranth/clickTracker.git"
+  },
+  "author": "Matthew Branthwaite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdbranth/clickTracker/issues"
+  },
+  "homepage": "https://github.com/mdbranth/clickTracker",
+  "dependencies": {
+    "logger": "git://github.com/mdbranth/logger.git"
+  },
+  "devDependencies": {
+    "browserify": "2.25.0"
+  }
+}
