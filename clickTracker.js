@@ -1,8 +1,9 @@
 var log = require('logger/ajaxlogger');
 
 var $ = window.$;
-
+var loaded = Date.now();
 handleClicks();
+handleUnload();
 
 function handleClicks() {
   $('body').click(function (ee) {
@@ -24,3 +25,13 @@ function handleClicks() {
     }
   });
 }
+
+function handleUnload() {
+  $(window).on('beforeunload', function() {
+    log({
+      'event': 'beforeunload',
+      'timeSpent': Date.now() - loaded
+    }).flush();
+  });
+}
+
